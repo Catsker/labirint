@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <title>Labirint</title>
+</head>
+<body>
+   <h1>Level 2</h1>
+   <ul class="labirint">
+      <li class="labirint__cell" id="11"></li>
+      <li class="labirint__cell blackcell current" id="12"></li>
+      <li class="labirint__cell" id="13"></li>
+      <li class="labirint__cell" id="14"></li>
+      <li class="labirint__cell blackcell" id="15"></li>
+      
+      <li class="labirint__cell" id="21"></li>
+      <li class="labirint__cell" id="22"></li>
+      <li class="labirint__cell" id="23"></li>
+      <li class="labirint__cell blackcell" id="24"></li>
+      <li class="labirint__cell" id="25"></li>
+
+      <li class="labirint__cell" id="31"></li>
+      <li class="labirint__cell blackcell" id="32"></li>
+      <li class="labirint__cell blackcell" id="33"></li>
+      <li class="labirint__cell finish" id="34"></li>
+      <li class="labirint__cell" id="35"></li>
+
+      <li class="labirint__cell" id="41"></li>
+      <li class="labirint__cell" id="42"></li>
+      <li class="labirint__cell blackcell" id="43"></li>
+      <li class="labirint__cell" id="44"></li>
+      <li class="labirint__cell blackcell" id="45"></li>
+
+      <li class="labirint__cell blackcell" id="51"></li>
+      <li class="labirint__cell" id="52"></li>
+      <li class="labirint__cell" id="53"></li>
+      <li class="labirint__cell" id="54"></li>
+      <li class="labirint__cell blackcell" id="55"></li>
+   
+   </ul>
+
+   <dialog class="modal" id="over">
+      <h2>Game over!</h2>
+      <button type="button" id="restart">Try again</button>
+   </dialog>
+   <dialog class="modal" id="won">
+      <h2>Game won!</h2>
+      <a href="level3.html" id="nextlevel">Next level</a>
+   </dialog>
+   <script src="js/main.js"></script>
+</body>
+</html>

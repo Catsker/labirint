@@ -1,0 +1,160 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+   background: transparent;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*--------------------*/
+
+h1 {
+   text-align: center;
+}
+
+.labirint {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.labirint__cell {
+   border: 1px black solid;
+   aspect-ratio: 1;
+}
+
+.current {
+   background: url('../img/duck-svgrepo-com.svg') center/70% no-repeat;
+}
+
+.finish {
+   background: url('../img/finish_flag_86lci08kar91.svg') center/70% no-repeat;
+}
+
+.current {
+   background: url('../img/duck-svgrepo-com.svg') center/70% no-repeat;
+}
+
+
+.blackcell {
+   background-color: black;
+}
+
+.modal {
+   color: white;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+
+   h2 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 50px;
+      text-align: center;
+   }
+
+   button, a {
+      width: 100%;
+      color: white;
+      display: block;
+      border: 1px solid white;
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+   }
+}
+
+#over {
+   background-color: red;
+}
+
+#won {
+   background-color: green;
+}
